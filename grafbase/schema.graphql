@@ -1,0 +1,6 @@
+extend schema
+  @openapi(
+    name: "Neon"
+    schema: "{{ env.NEON_SCHEMA_URL }}"
+    headers: [{ name: "Authorization", value: "Bearer {{ env.NEON_API_KEY }}" }]
+  )
